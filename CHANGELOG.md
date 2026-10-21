@@ -221,6 +221,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed the Material Properties panel and ComfyUI job queue using the captured material for a replacement mesh whose materials are bound on GeomSubsets; select a subset to edit its material.
 - Fixed the RTX Remix modding agent skill making multi-target writes (e.g. "replace all the textures") without first confirming the resolved set with the user (NVBug 6713631).
 - Fixed dependency downloads failing in GitHub checkouts
+- Made `tools/ci/scripts/notify_remix_target_dep_bot.sh` use a bash 3.2-compatible channel de-duplication so its test suite passes with the default macOS `/bin/bash` (associative arrays require bash 4.0+).
 
 ## [1.5.2-0]
 
